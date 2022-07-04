@@ -1,0 +1,36 @@
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  cursor: url(../images/icon/cursor.svg), auto;
+}
+.link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+.list {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.opacity {
+  opacity: 0;
+  display: none;
+  cursor: url(../images/icon/cursor.svg), auto;
+}
+*,
+*:focus,
+*:hover {
+  outline: none;
+}

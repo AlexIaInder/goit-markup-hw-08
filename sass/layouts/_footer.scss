@@ -1,0 +1,116 @@
+.footer {
+  background-color: var(--footer-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-footer__link--map {
+  color: var(--primary-bg-color);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-footer__map {
+  margin-top: 20px;
+}
+.contact-footer__link--color {
+  color: var(--info-color-footer);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.7;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-footer__info {
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+.contact-footer {
+  width: 231px;
+}
+.contact-footer {
+& .contact-footer__link--color:hover {
+  color: var(--accent-color);
+}
+& .contact-footer__link--color:focus {
+  color: var(--accent-color);
+}
+}
+.contact-footer {
+  & .contact-footer__link--map:hover {
+    color: var(--accent-color);
+  }
+& .contact-footer__link--map:focus {
+  color: var(--accent-color);
+}
+}
+.footer-join {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+.footer-join__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.follower-container {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+  margin-right: 93px;
+  margin-bottom: 94px;
+}
+
+.follower-container__title {
+  display: flex;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
+}
+.follower-form {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.follower-form {
+.follower-form__email {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  color: #fff;
+  background-color: var(--footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+}
+.footer__logo--white {
+  color: var(--primary-bg-color);
+}
+.footer__logo--accent {
+  color: var(--accent-color);
+}
+.footer__logo {
+  color: var(--part-of-logo);
+  text-decoration: none;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+}
+

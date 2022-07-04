@@ -1,0 +1,62 @@
+.icon-container {
+  position: relative;
+  display: fle;
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-user {
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+}
+
+.icon-phone {
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  fill: #212121;
+}
+
+.icon-mail {
+  width: 15px;
+  height: 12px;
+  position: absolute;
+  top: 13px;
+  left: 12px;
+}
+.svg-check {
+  display: none;
+  position: absolute;
+  top: -1px;
+  left: -29px;
+  width: 25px;
+  height: 27px;
+}
+
+.svg-cube {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -25px;
+  width: 16px;
+  height: 15px;
+}
+.agree  {
+  & input:checked+label .svg-cube {
+display: none;
+  } 
+}
+.agree {
+  & input:checked+label .svg-check {
+  display: block;
+  }
+}
+.modal-input {
+  &:focus+svg {
+     fill: var(--accent-color);
+  }
+}

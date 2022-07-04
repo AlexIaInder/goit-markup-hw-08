@@ -1,0 +1,36 @@
+.items-way {
+  display: flex;
+}
+.items-way  {
+  & .li-way:not(:last-child) {
+ margin-right: 30px;
+  }
+}
+.container-tile {
+  height: 120px;
+  display: flex;
+  background-color: var(--secondary-button-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.container-tile  {
+  svg {
+ width: 70px;
+  }
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: flex;
+}
+.item {
+  color: var(--item-contact);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-top: 0;
+}
