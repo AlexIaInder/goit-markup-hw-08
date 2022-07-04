@@ -248,8 +248,10 @@ button {
   }
 }
 
-.button-marketing {
-  margin-top: 15px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .button-marketing {
+    margin-top: 15px;
+  }
 }
 
 .secondary-button {
@@ -1250,6 +1252,20 @@ header {
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .li-portfolio {
+    width: 450px;
+  }
+}
+
+.img-portfolio {
+  width: 370px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .img-portfolio {
+    width: 450px;
+  }
 }
 
 .li-portfolio:nth-child(3n) {

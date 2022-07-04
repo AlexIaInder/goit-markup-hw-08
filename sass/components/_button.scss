@@ -104,7 +104,9 @@ margin-right: 8px;
  }
 }
 .button-marketing {
+   @media screen and (min-width: 480px) and  (max-width: 767px) {
  margin-top: 15px;
+}
 }
 .secondary-button {
   padding: 6px 22px;
