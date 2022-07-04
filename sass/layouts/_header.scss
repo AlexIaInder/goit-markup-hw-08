@@ -1,6 +1,11 @@
 header {
   border: 1px solid var(--border-color-head);
 }
+.container-header {
+ @media screen and (min-width: 480px) and  (max-width: 767px) {
+  margin-left: 0px;
+ }
+}
 .main-nav {
   display: flex;
   align-items: center;
@@ -38,7 +43,9 @@ header {
   .link {  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;}
-
+ @media screen and (min-width: 480px) and  (max-width: 767px) {
+  display: none;
+ }
 }
 .nav-active-studio {
 &::after {
@@ -106,12 +113,14 @@ header {
 .contact {
   display: flex;
   margin-left: auto;
-
   color: var(--item-contact);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  @media screen and (min-width: 480px) and  (max-width: 767px) {
+    display: none;
+  }
 }
 .icon-letter {
   width: 16px;

@@ -1,5 +1,11 @@
 .items-way {
   display: flex;
+ @media screen and (min-width: 480px) and  (max-width: 767px) {
+  display: flex;
+  flex-wrap: wrap;
+  
+ }
+
 }
 .items-way  {
   & .li-way:not(:last-child) {
@@ -13,7 +19,11 @@
   border-radius: 4px;
   margin-bottom: 30px;
   justify-content: center;
+   @media screen and (min-width: 480px) and  (max-width: 767px) {
+  width: 450px;
 }
+}
+
 .container-tile  {
   svg {
  width: 70px;
