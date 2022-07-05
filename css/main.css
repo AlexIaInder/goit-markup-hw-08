@@ -79,6 +79,16 @@ a {
   outline: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
