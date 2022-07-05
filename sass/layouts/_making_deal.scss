@@ -1,11 +1,13 @@
 .section-making {
-@media screen and (min-width: 480px) and  (max-width: 767px) {
-  display: none;
-}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1199px) {
+    display: none;
+  }
 }
 .making-items {
   display: flex;
-
 }
 
 .making-items {
@@ -55,5 +57,4 @@
   margin-top: 0;
   margin-bottom: 50px;
   text-align: center;
-  
 }

@@ -1,18 +1,39 @@
+.container-team {
+  padding: 0;
+}
+
 .section-team {
   background-color: var(--secondary-button-color);
-  
-   }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .team-iteams {
   display: flex;
-   @media screen and (min-width: 480px) and  (max-width: 767px)  {
-  display: flex;
-flex-wrap: wrap;
-justify-content: center;
-width: 450px;
 
- }
+  & .team-iteams-1,
+  & .team-iteams-2 {
+    display: flex;
+  }
+
+  & .team-iteams__iteam {
+    margin: 0 15px;
+  }
+  & .team-iteams__iteam:last-child {
+    margin-right: 0;
+  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
+  //   width: 450px;
+  // }
+  // @media screen and (min-width: 768px) and (max-width: 1200px) {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   gap: 30px;
+  // }
 }
 
 .team-iteams__iteam {
@@ -20,28 +41,18 @@ width: 450px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-    @media screen and (min-width: 480px) and  (max-width: 767px) {
-      margin-bottom: 30px;
-      width: 450px;
-    }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   margin-bottom: 30px;
+  //   width: 450px;
+  // }
 }
 
-    .team-iteams { 
-      @media screen and  (max-width: 767px) {
-      margin-right: 0px;
-    }
-  & .team-iteams__iteam:not(:last-child) {
-  margin-right: 30px;
-  }
-    
-}
 .img-team {
   width: 270px;
-  @media screen and (min-width: 480px) and  (max-width: 767px) {
-    width: 450px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   width: 450px;
+  // }
 }
-  
 
 .container-team__title {
   font-weight: 700;
@@ -71,4 +82,44 @@ width: 450px;
   font-size: 16px;
   line-height: 19px;
   margin-top: 0;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .team-iteams {
+    flex-direction: column;
+
+    & .team-iteams-1,
+    & .team-iteams-2 {
+      justify-content: center;
+    }
+
+    & .team-iteams-2 {
+      margin-top: 4rem;
+    }
+
+    & .team-iteams__iteam img {
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .team-iteams {
+    flex-direction: column;
+    align-items: center;
+
+    & .team-iteams-1,
+    & .team-iteams-2 {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    & .team-iteams__iteam {
+      margin-top: 2rem;
+    }
+
+    & .team-iteams__iteam img {
+      width: 350px;
+    }
+  }
 }

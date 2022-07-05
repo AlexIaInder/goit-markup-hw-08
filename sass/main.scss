@@ -15,7 +15,6 @@
 @import "./components/form/logo";
 @import "./components/form/form";
 
-
 // layouts
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -25,3 +24,9 @@
 @import "./layouts/always-clines";
 @import "./layouts/portfolio";
 @import "./layouts/footer";
+
+@media (max-width: 321px) {
+  .page {
+    overflow-x: hidden;
+  }
+}

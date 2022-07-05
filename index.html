@@ -22,7 +22,7 @@
   <body class="page">
     <!-- Шапка -->
     <header>
-      <div class="container container-header">
+      <div class="container container-header" data-menu>
         <nav class="main-nav">
           <a href="./index.html" class="logo-header"
             ><span class="general-logo-header">Web</span
@@ -60,6 +60,32 @@
               </a
                 >
             </li>
+          </ul>
+        </nav>
+        <button class="burger" data-menu-button>
+          <svg class="btn-open">
+          <use href="./images/icon/icons.svg#menu"></use>
+        </svg>
+        <svg class="close-btm-mobile">
+          <use href="./images/icon/icons.svg#vector"></use>
+        </svg>
+        </button>
+        <nav class="nav-header-mobile">
+          <ul class="site-nav-mobile">
+            <li class="mobile-studio" > <a href="./index.html" class="link selected">Студия</a></li>
+            <li class="mobile-portfolio"><a href="./portfolio.html "class="link">Портфолио</a></li>
+            <li class="contact-mobile"><a href=""class="link">Контакты</a></li>
+          </ul>
+          <ul class="contact-mobile">
+            <li class="mobile-number"> <a href="tel:+380961111111" class="link mobile-link"> +38 096 111 11 11</a></li>
+            <li class="mobile-mail"> <a href="mailto:info@devstudio.com" class="link mobile-mail-link"> info@devstudio.com</a></li>
+          </ul>
+          <ul class="social-mobile">
+            <li><a href=""class="link soc-link"> Instagram </a> </li><p class="mobile-curse">|</p>
+            <li><a href=""class="link soc-link">Twitter</a></li><p class="mobile-curse">|</p>
+            <li><a href=""class="link soc-link">Facebook</a></li>
+            <p class="mobile-curse">|</p>
+            <li><a href=""class="link soc-link">LinkedIn</a></li>
           </ul>
         </nav>
       </div>
@@ -182,19 +208,20 @@
         <div class="container">
           <h2 class="opacity">Пункты эфективного бизнеса</h2>
           <ul class="list items-way">
-            <li class="li-way icon-antena">
-              <div class="container-tile">
-                <svg class="">
-                  <use href="./images/icon/icons.svg#antenna"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle">Внимание к деталям</h3>
-              <p class="item">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="li-way icon-clock">
+            <div class="items-way-1">
+              <li class="li-way icon-antena">
+                <div class="container-tile">
+                  <svg class="">
+                    <use href="./images/icon/icons.svg#antenna"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle">Внимание к деталям</h3>
+                <p class="item">
+                  Идейные соображения, а также начало повседневной работы по
+                  формированию позиции.
+                </p>
+              </li>
+              <li class="li-way icon-clock">
               <div class="container-tile">
                 <svg class="">
                   <use href="./images/icon/icons.svg#clock"></use>
@@ -206,19 +233,21 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="li-way icon-diagram">
-              <div class="container-tile">
-                <svg class="">
-                  <use href="./images/icon/icons.svg#diagram"></use>
-                </svg>
-              </div>
-              <h3 class="subtitle">Планирование</h3>
-              <p class="item">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="li-way icon-cosmonavt">
+            </div>
+            <div class="items-way-2">
+              <li class="li-way icon-diagram">
+                <div class="container-tile">
+                  <svg class="">
+                    <use href="./images/icon/icons.svg#diagram"></use>
+                  </svg>
+                </div>
+                <h3 class="subtitle">Планирование</h3>
+                <p class="item">
+                  Равным образом консультация с широким активом в значительной
+                  степени обуславливает.
+                </p>
+              </li>
+              <li class="li-way icon-cosmonavt">
               <div class="container-tile">
                 <svg class="">
                   <use href="./images/icon/icons.svg#cosmonavt"></use>
@@ -230,6 +259,7 @@
                 плановых заданий.
               </p>
             </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -276,184 +306,188 @@
         <div class="container container-team">
           <h2 class="container-team__title">Наша команда</h2>
           <ul class="list team-iteams">
-            <li class="team-iteams__iteam">
-              <img
-                src="./images/img/productdesigner.jpg"
-                alt="Product Designer"
-                class="img-team"
-                />
-              <div class="worker">
-                <h3 class="worker__name">Игорь Демьяненко</h3>
-                <p lang="en" class="worker__profession--text">Product Designer</p>
-                <ul class="social-networks">
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#insta"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href="">
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#linkin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-iteams__iteam">
-              <img
-                src="./images/img/frontenddeveloper.jpg"
-                alt="Frontend Developer"
-                class="img-team"
-                />
-              <div class="worker">
-                <h3 class="worker__name">Ольга Репина</h3>
-                <p lang="en" class="worker__profession--text">
-                  Frontend Developer
-                </p>
-                <ul class="social-networks">
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#insta"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href="">
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#linkin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-iteams__iteam">
-              <img
-                src="./images/img/marketing.jpg"
-                alt="Marketing"
-                 class="img-team"
-                />
-              <div class="worker">
-                <h3 class="worker__name">Николай Тарасов</h3>
-                <p lang="en" class="worker__profession--text">Marketing</p>
-                <ul class="social-networks">
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#insta"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href="">
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#linkin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="team-iteams__iteam">
-              <img
-                src="./images/img/uidesigner.jpg"
-                alt="UI Designer"
-                class="img-team"
-                />
-              <div class="worker">
-                <h3 class="worker__name">Михаил Ермаков</h3>
-                <p lang="en" class="worker__profession--text">UI Designer</p>
-                <ul class="social-networks">
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#insta"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#twitter"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href=""
-                      >
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#facebook"></use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-networks__item">
-                    <a class="social-networks__link" href="">
-                      <svg class="social-networks__svg--inherit">
-                        <use href="./images/icon/icons.svg#linkin"></use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </li>
+            <div class="team-iteams-1">
+              <li class="team-iteams__iteam">
+                <img
+                  src="./images/img/productdesigner.jpg"
+                  alt="Product Designer"
+                  width="270"
+                  />
+                <div class="worker">
+                  <h3 class="worker__name">Игорь Демьяненко</h3>
+                  <p lang="en" class="worker__profession--text">Product Designer</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#linkin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team-iteams__iteam">
+                <img
+                  src="./images/img/frontenddeveloper.jpg"
+                  alt="Frontend Developer"
+                  width="270"
+                  />
+                <div class="worker">
+                  <h3 class="worker__name">Ольга Репина</h3>
+                  <p lang="en" class="worker__profession--text">
+                    Frontend Developer
+                  </p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#linkin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
+            <div class="team-iteams-2">
+              <li class="team-iteams__iteam">
+                <img
+                  src="./images/img/marketing.jpg"
+                  alt="Marketing"
+                  width="270"
+                  />
+                <div class="worker">
+                  <h3 class="worker__name">Николай Тарасов</h3>
+                  <p lang="en" class="worker__profession--text">Marketing</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#linkin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="team-iteams__iteam">
+                <img
+                  src="./images/img/uidesigner.jpg"
+                  alt="UI Designer"
+                  width="270"
+                  />
+                <div class="worker">
+                  <h3 class="worker__name">Михаил Ермаков</h3>
+                  <p lang="en" class="worker__profession--text">UI Designer</p>
+                  <ul class="social-networks">
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#insta"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href=""
+                        >
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social-networks__item">
+                      <a class="social-networks__link" href="">
+                        <svg class="social-networks__svg--inherit">
+                          <use href="./images/icon/icons.svg#linkin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </div>
           </ul>
         </div>
       </section>
@@ -517,7 +551,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-container">
-          <div class="footer__tumb" >
+          <div class="footer-block footer__tumb" >
             <a href="./index.html" class="footer__logo"
               ><span class="footer__logo--accent">Web</span
               ><span class="footer__logo--white">Studio</span></a
@@ -544,7 +578,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer-join">
+          <div class="footer-block footer-join">
             <h2 class="footer-join__title">присоединяйтесь</h2>
             <ul class="footer-social__list">
               <li>
@@ -580,7 +614,7 @@
               </li>
             </ul>
           </div>
-          <div class="follower-container">
+          <div class="footer-block follower-container">
             <h2 class="follower-container__title">Подпишитесь на рассылку</h2>
             <form class="follower-form">
               <input class="follower-form__email" type="email" placeholder="E-mail" />
@@ -596,5 +630,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
