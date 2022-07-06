@@ -86,28 +86,22 @@ button {
   text-align: center;
   display: flex;
   justify-content: center;
-  @media screen and (min-width: 480px) and (max-width: 768px) {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    width: 354px;
-  }
+  flex-wrap: nowrap;
+  // @media screen and (min-width: 480px) and (max-width: 768px) {
+  //   justify-content: flex-start;
+  //   flex-wrap: wrap;
+  // }
+}
+
+.flex-new-string {
+  display: flex;
 }
 .btn-portfolio {
-  & .list-portfolio-btn:not(:last-child) {
-    margin-right: 8px;
+  & .list-portfolio-btn {
+    margin: 8px;
   }
 }
-.button-dis {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-top: 15px;
-  }
-}
-.button-marketing {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    margin-top: 15px;
-  }
-}
+
 .secondary-button {
   padding: 6px 22px;
   background-color: var(--secondary-button-color);
@@ -147,4 +141,15 @@ button {
 }
 .button-marketing {
   min-width: 130px;
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+}
+
+@media (max-width: 768px) {
+  .btn-portfolio {
+    max-width: 400px;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
 }
