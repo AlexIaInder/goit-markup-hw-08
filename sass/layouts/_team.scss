@@ -20,9 +20,6 @@
   & .team-iteams__iteam {
     margin: 0 15px;
   }
-  & .team-iteams__iteam:last-child {
-    margin-right: 0;
-  }
 }
 
 .team-iteams__iteam {
@@ -83,6 +80,9 @@
       width: 350px;
     }
   }
+  .section-team {
+    padding: 2.5rem 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -103,5 +103,13 @@
     & .team-iteams__iteam img {
       width: 350px;
     }
+  }
+
+  .section-team {
+    padding: 2rem 0;
+  }
+
+  .container-team__title {
+    margin-bottom: 0;
   }
 }

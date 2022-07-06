@@ -30,3 +30,17 @@
     overflow-x: hidden;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .page {
+    width: 769px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .page {
+    width: 480px;
+    margin: 0 auto;
+  }
+}

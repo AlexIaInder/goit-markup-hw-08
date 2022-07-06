@@ -9,20 +9,45 @@
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    font-size: 26px;
+  @media (min-width: 700px) and (max-width: 1200px) {
+    font-size: 34px;
+  }
+
+  @media (max-width: 769px) {
+    font-size: 20px;
   }
 }
 
 .hero {
   background-color: var(--footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 300px;
+  padding-bottom: 300px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 700px) and (max-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (max-width: 769px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .hero-title {
+      margin-bottom: 1rem;
+    }
+
+    .button-general {
+      min-width: 150px;
+      padding: 5px 16px;
+    }
+  }
+
   // desktop
   @media (min-width: 1201px) {
     background-image: linear-gradient(
@@ -30,7 +55,7 @@
         var(--block-background-color),
         var(--block-background-color)
       ),
-      url(../../images/desk/img_result.jpg);
+      url(../images/desk/img_result.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -44,7 +69,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/desk/hero-bm@2x_result.jpg);
+        url(../images/desk/hero-bm@2x_result.jpg);
     }
   }
   // Tab
@@ -53,7 +78,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/tab/Header-md-img_result.jpg);
+      url(../images/tab/Header-md-img_result.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -63,7 +88,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/tab/Header-md-img@2x_result.png);
+        url(../images/tab/Header-md-img@2x_result.png);
     }
   }
   // mob
@@ -72,7 +97,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../images/mob/Header-sm-img_result.jpg);
+      url(../images/mob/Header-sm-img_result.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (-webkit-min-device-pixel-ratio: 2),
@@ -82,7 +107,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../images/mob/Header-sm-img@2x_result.png);
+        url(../images/mob/Header-sm-img@2x_result.png);
     }
   }
 }

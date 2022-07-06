@@ -266,15 +266,13 @@ header {
 .social-mobile {
   display: flex;
   list-style: none;
-  position: absolute;
-  top: 95%;
-  right: 30%;
+  margin-top: 5rem;
 }
 .soc-link {
   color: #2196f3;
 }
 .mobile-number {
-  margin-top: 302px;
+  margin-top: 5rem;
 }
 .mobile-mail {
   margin-top: 32px;
@@ -289,7 +287,7 @@ header {
 .selected {
   color: var(--accent-color);
 }
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .container-header .burger {
     display: block;
     margin-left: auto;

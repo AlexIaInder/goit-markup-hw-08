@@ -71,5 +71,15 @@
       flex-wrap: wrap;
       max-width: 500px;
     }
+
+    & .li-way {
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    & .subtitle {
+      display: flex;
+      justify-content: center;
+    }
   }
 }

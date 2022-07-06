@@ -94,11 +94,11 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 1200px;
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 4rem 0;
 }
 
 button {
@@ -275,12 +275,13 @@ button {
 
 @media (max-width: 768px) {
   .btn-portfolio {
-    max-width: 400px;
+    width: 470px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    margin: 1rem auto;
   }
 }
 .social-networks {
@@ -350,8 +351,7 @@ button {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 4rem 0;
 }
 
 .backdrop {
@@ -515,7 +515,7 @@ textarea {
 }
 
 .form {
-  width: 528px;
+  width: 450px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -540,7 +540,7 @@ textarea {
 .form-field input {
   margin: 0;
   padding: 6px 10px 6px 42px;
-  width: 448px;
+  width: 370px;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .form-field input {
@@ -929,9 +929,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  position: absolute;
-  top: 95%;
-  right: 30%;
+  margin-top: 5rem;
 }
 
 .soc-link {
@@ -939,7 +937,7 @@ header {
 }
 
 .mobile-number {
-  margin-top: 302px;
+  margin-top: 5rem;
 }
 
 .mobile-mail {
@@ -958,7 +956,7 @@ header {
   color: var(--accent-color);
 }
 
-@media screen and (min-width: 480px) and (max-width: 768px) {
+@media (max-width: 768px) {
   .container-header .burger {
     display: block;
     margin-left: auto;
@@ -1051,26 +1049,51 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 700px) and (max-width: 1200px) {
   .hero-title {
-    font-size: 26px;
+    font-size: 34px;
+  }
+}
+@media (max-width: 769px) {
+  .hero-title {
+    font-size: 20px;
   }
 }
 
 .hero {
   background-color: var(--footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 300px;
+  padding-bottom: 300px;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 700px) and (max-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+@media (max-width: 769px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .hero .hero-title {
+    margin-bottom: 1rem;
+  }
+  .hero .button-general {
+    min-width: 150px;
+    padding: 5px 16px;
+  }
 }
 @media (min-width: 1201px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(var(--block-background-color)), to(var(--block-background-color))), url(../../images/desk/img_result.jpg);
-    background-image: linear-gradient(to right, var(--block-background-color), var(--block-background-color)), url(../../images/desk/img_result.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--block-background-color)), to(var(--block-background-color))), url(../images/desk/img_result.jpg);
+    background-image: linear-gradient(to right, var(--block-background-color), var(--block-background-color)), url(../images/desk/img_result.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1078,32 +1101,32 @@ header {
 }
 @media (min-width: 1201px) and (min-device-pixel-ratio: 2), (min-width: 1201px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1201px) and (min-resolution: 192dpi), (min-width: 1201px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/desk/hero-bm@2x_result.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desk/hero-bm@2x_result.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/desk/hero-bm@2x_result.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desk/hero-bm@2x_result.jpg);
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tab/Header-md-img_result.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab/Header-md-img_result.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tab/Header-md-img_result.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/Header-md-img_result.jpg);
   }
 }
 @media (min-width: 769px) and (max-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (max-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (max-width: 1200px) and (min-resolution: 192dpi), (min-width: 769px) and (max-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/tab/Header-md-img@2x_result.png);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tab/Header-md-img@2x_result.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/tab/Header-md-img@2x_result.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tab/Header-md-img@2x_result.png);
   }
 }
 @media (max-width: 768px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mob/Header-sm-img_result.jpg);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob/Header-sm-img_result.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob/Header-sm-img_result.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/Header-sm-img_result.jpg);
   }
 }
 @media (max-width: 768px) and (min-device-pixel-ratio: 2), (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 768px) and (min-resolution: 192dpi), (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../../images/mob/Header-sm-img@2x_result.png);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mob/Header-sm-img@2x_result.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/mob/Header-sm-img@2x_result.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mob/Header-sm-img@2x_result.png);
   }
 }
 
@@ -1191,6 +1214,18 @@ header {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     max-width: 500px;
+  }
+  .items-way .li-way {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .items-way .subtitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 .section-making {
@@ -1293,9 +1328,6 @@ header {
 .team-iteams .team-iteams__iteam {
   margin: 0 15px;
 }
-.team-iteams .team-iteams__iteam:last-child {
-  margin-right: 0;
-}
 
 .team-iteams__iteam {
   background-color: var(--primary-bg-color);
@@ -1356,6 +1388,10 @@ header {
   .team-iteams .team-iteams__iteam img {
     width: 350px;
   }
+
+  .section-team {
+    padding: 2.5rem 0;
+  }
 }
 @media (max-width: 768px) {
   .team-iteams {
@@ -1379,6 +1415,14 @@ header {
   }
   .team-iteams .team-iteams__iteam img {
     width: 350px;
+  }
+
+  .section-team {
+    padding: 2rem 0;
+  }
+
+  .container-team__title {
+    margin-bottom: 0;
   }
 }
 .always-clines__title {
@@ -1503,6 +1547,15 @@ header {
   .clines-items__item {
     width: 25%;
   }
+
+  .section-partners {
+    padding: 1rem 0 3rem 0;
+  }
+
+  .always-clines__title {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 768px) {
   .clines-items {
@@ -1512,6 +1565,23 @@ header {
 
   .clines-items__item {
     width: 30%;
+  }
+
+  .always-clines__title {
+    margin-bottom: 2rem;
+  }
+
+  .section-partners {
+    padding: 1rem 0 3rem 0;
+  }
+
+  .always-clines__title {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+  }
+
+  .always-clines__title {
+    padding: 1.5rem 0;
   }
 }
 .item-portfolio {
@@ -1784,6 +1854,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .footer-container .follower-container__title {
     display: block;
@@ -1794,10 +1867,13 @@ header {
     text-align: center;
   }
   .footer-container .follower-form__email {
-    width: 100%;
+    width: 75%;
   }
   .footer-container .follower-form__btn {
     margin: 1rem auto 0 auto;
+  }
+  .footer-container .footer__tumb {
+    text-align: center;
   }
 }
 @media (max-width: 768px) {
@@ -1844,5 +1920,17 @@ header {
 @media (max-width: 321px) {
   .page {
     overflow-x: hidden;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .page {
+    width: 769px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .page {
+    width: 480px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -97,6 +97,15 @@
   .clines-items__item {
     width: 25%;
   }
+
+  .section-partners {
+    padding: 1rem 0 3rem 0;
+  }
+
+  .always-clines__title {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -105,5 +114,22 @@
   }
   .clines-items__item {
     width: 30%;
+  }
+
+  .always-clines__title {
+    margin-bottom: 2rem;
+  }
+
+  .section-partners {
+    padding: 1rem 0 3rem 0;
+  }
+
+  .always-clines__title {
+    padding: 2.5rem 0;
+    margin-bottom: 0;
+  }
+
+  .always-clines__title {
+    padding: 1.5rem 0;
   }
 }
